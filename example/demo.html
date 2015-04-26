@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../src/jquery.m.toast.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../src/jquery.m.toast.js"></script>
+</head>
+<body>
+    <button id="btn1">default</button>
+    <button id="btn2">set width 500px</button>
+    <button id="btn3">set duration 0.5s</button>
+    <button id="btn4">set type danger</button>
+    <button id="btn5">set align top</button>
+    <button id="btn6">set singleton false</button>
+</body>
+
+<script type="text/javascript">
+$(function () {
+    $('button').click(function(){
+        var id = $(this).attr('id');
+        if(id == 'btn1')
+            $.toast('default');
+        else if(id == 'btn2')
+            $.toast('specify width 500px', {'width': 500});
+        else if(id == 'btn3')
+            $.toast('set duration 0.5s', {'duration': 500});
+        else if(id == 'btn4')
+            $.toast('set type danger', {'type': 'danger'});
+        else if(id == 'btn5')
+            $.toast('set align top', {'align': 'top'});
+        else if(id == 'btn6')
+            $.toast('set singleton false', {'singleton': false});
+    });
+});
+</script>
+</html>
