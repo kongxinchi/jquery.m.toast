@@ -15,9 +15,6 @@ A simply toast plugin for mobile webpage, especially suitable for webview pages.
 Example:
 
     $.toast('Hello world, I'm a little pretty toast.');
-    
-or
-
     $.toast('Hello world, I'm a little pretty but dangerous toast.', {'duration': 1000, 'type': 'danger'});
 
 ## Options
