@@ -33,7 +33,7 @@
         var span = "<span>" + message + "</span>";
         var item = $('<li></li>').hide();
         if(options.width > 0) {
-            span = "<span style='width: " + options.width + "'>" + message + "</span>";
+            span = "<span style='width: " + options.width + "px'>" + message + "</span>";
         }
         if(options.align == 'top') {
             item.html(span).prependTo(container);
